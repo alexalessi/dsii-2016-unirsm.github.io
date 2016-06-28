@@ -1,7 +1,7 @@
 // Alex Alessi © 2016 MIT License
 // 10 print porting to P5js | San Marino, SM | 4.2016
 // Educational purpose, made for DSII2016 lab @UniRSM
-
+var vl = 0;
 var w = 16;
 var value = 0;
 var index = 0;
@@ -24,6 +24,12 @@ function mouseClicked() {
     value = 0;
   }
   return false;
+  
+  vl=+2+(random(100));
+  println(vl);
+  if (vl>200){
+    vl=0;
+  }
 }
 
 function mouseMoved() {
@@ -39,6 +45,7 @@ if (index >= windowWidth/w) {
   if (value == 1) { //se clicco il mouse attivo questo sotto
      if (random(2) <1) {
        fill(135, 108, 255);
+       ellipse(mouseX, mouseY, vl, vl);
        
       } else {
 
@@ -56,9 +63,9 @@ if (index >= windowWidth/w) {
 } else {
 
     if (random(2) <1) {
-    fill(135, 108, 255);
+    fill(135, 108, vl);
     } else {
-      fill(255, 255, 255);
+      fill(255, 255, vl);
     }//if
   
   ellipse(mouseX, mouseY, index, index);
