@@ -25,9 +25,9 @@ function mouseClicked() {
   }
   return false;
   
-  vl= 2+ random(100);
+  vl = 2+ random(100);
   if (vl>200){
-    vl=0;
+    vl = 0;
   }
 }
 
