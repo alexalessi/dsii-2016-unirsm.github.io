@@ -2,7 +2,7 @@
 // 10 print porting to P5js | San Marino, SM | 4.2016
 // Educational purpose, made for DSII2016 lab @UniRSM
 var vl = 0;
-var w = 16;
+var w = 40;
 var value = 0;
 var index = 0;
 
