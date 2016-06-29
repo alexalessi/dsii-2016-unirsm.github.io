@@ -39,7 +39,7 @@ if (index >= windowWidth/w) {
     set(0, 0, p);
     index = 0;
   }//if
-  index = index + 8;
+  index = index + 10;
 
   if (value == 1) { //se clicco il mouse attivo questo sotto
      if (random(2) <1) {
